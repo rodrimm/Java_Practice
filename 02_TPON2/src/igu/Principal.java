@@ -303,7 +303,7 @@ Controladora control;
         txtNombreDuenio.setText("");
         txtCelDuenio.setText("");
         txtObservaciones.setText("");
-        
+
     }//GEN-LAST:event_btnLimpiarActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -315,11 +315,11 @@ Controladora control;
         String nombreDuenio = txtNombreDuenio.getText();
         String celDuenio = txtCelDuenio.getText();
         String observaciones = txtObservaciones.getText();
-        
+
         control.altaMascota(nombrePerro, raza, color, alergico, atEspecial, nombreDuenio, celDuenio, observaciones);
-        
+
         JOptionPane.showMessageDialog(rootPane, "Mascota Agregada", "Creada", JOptionPane.INFORMATION_MESSAGE);
-        
+
         txtNombrePerro.setText("");
         txtRaza.setText("");
         txtColor.setText("");

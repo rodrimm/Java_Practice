@@ -3,7 +3,7 @@ package logica;
 import persistencia.ControladoraPersistencia;
 
 public class Controladora {
-    
+
     ControladoraPersistencia controlPersi = new ControladoraPersistencia();
 
     //Alta
@@ -17,12 +17,12 @@ public class Controladora {
         masco.setNombre_duenio(nombreDuenio);
         masco.setCelular_duenio(celDuenio);
         masco.setObservaciones(observaciones);
-        
+
         controlPersi.altaMascota(masco);
     }
-    
+
     public void altaMascota(Mascota masco) {
         controlPersi.altaMascota(masco);
     }
-    
+
 }
